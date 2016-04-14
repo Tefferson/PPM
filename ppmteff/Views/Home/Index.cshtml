@@ -1,0 +1,76 @@
+﻿<h2 class="head-title">Didactic PPM</h2>
+<section style="text-align:center">
+    <fieldset id="cfg">
+        <div class="ilb">
+            <input type="text" placeholder="Input here..." maxlength="40" value="saisiasianaisnmasinas" id="txt">
+        </div>
+        <div style="justify-content:space-between;">
+            <div class="ilb" style="width:9.3%;">
+                <label>Order</label>
+                <select onchange="start(0)" id="order-list">
+                    <option value="2" selected="">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="ilb" style="width:15%;">
+                <label>Step</label>
+                <input type="number" onchange="updateStep(this)" id="step" value="0">
+                <input type="button" onclick="start(0)" value="go">
+            </div>
+        </div>
+        <div id="btns">
+            <input type="button" onclick="start(-1)" value="previous">
+            <input type="button" onclick="start(-2)" value="restart">
+            <input type="button" onclick="start(+1)" value="next">
+        </div>
+    </fieldset>
+    <div id="tbl-container">
+        <div>
+            <div id="no-id">
+                <div id="col-container">
+                    <div><h2 class="title">ORDER 2</h2></div><div id="cell">
+                        <div>
+                            context
+
+                        </div><div>
+                            f
+
+                        </div><div>
+                            p
+
+                        </div>
+                    </div>
+                </div><div id="col-container">
+                    <div><h2 class="title">ORDER 1</h2></div><div id="cell">
+                        <div>
+                            context
+
+                        </div><div>
+                            f
+
+                        </div><div>
+                            p
+
+                        </div>
+                    </div>
+                </div><div id="col-container">
+                    <div><h2 class="title">ORDER 0</h2></div><div id="cell">
+                        <div>
+                            symbol
+
+                        </div><div>
+                            f
+
+                        </div><div>
+                            p
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<h2 id="footer">By Tefferson Guterres - 2016</h2>
+<script src="http://codepen.io/Tefferson/pen/XdEpRB.js"></script>
